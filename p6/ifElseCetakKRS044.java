@@ -1,6 +1,7 @@
+package p6;
 import java.util.Scanner;
 
-public class ifElseCetakKRS04 {
+public class ifElseCetakKRS044 {
     public static void main(String[] args) {
         Scanner sc04 = new Scanner(System.in);
         int semester04;

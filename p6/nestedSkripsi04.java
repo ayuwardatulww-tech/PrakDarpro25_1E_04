@@ -1,3 +1,4 @@
+package p6;
 import java.util.Scanner;
 
 public class nestedSkripsi04 {
