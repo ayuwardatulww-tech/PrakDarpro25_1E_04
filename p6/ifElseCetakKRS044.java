@@ -10,6 +10,8 @@ public class ifElseCetakKRS044 {
         System.out.println("Masukkan semester saat ini");
         semester04 = sc04.nextInt();
 
+        
+
        if (semester04 == 1) {
         System.out.println("KRS Semester 1 ditampilkan");
        } else if (semester04 == 2) {
