@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class parkir04 {
     public static void main(String[] args) {
         Scanner ayu = new Scanner(System.in);
-        int jenis04, durasi04 = 0, total04 = 0;
+        int jenis04, durasi04= 0, total04 = 0;
 
         do {
             System.out.println("Masukkan jenis kendaraan (1 mobil,2 motor,0 keluar)");
