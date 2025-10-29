@@ -8,7 +8,7 @@ public class star04 {
         System.out.print("Masukkan nilai n =");
         int n = ayu.nextInt();
 
-        for (int i = 1; i < n ; i++) {
+        for (int i = 1; i > n ; i++) {
             System.out.print("*");
         }
 
