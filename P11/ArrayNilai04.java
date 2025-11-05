@@ -14,7 +14,10 @@ public class ArrayNilai04 {
         for (int i = 0; i < nilaiAKhi04.length; i++) {
             if (nilaiAKhi04[i] > 70) {
                  System.out.println("Mahasiswa ke-"+i+" lulus");
-                }
+                } else {
+                    System.out.println("Mahasiswa ke-"+i+" tidak lulus");
+                } 
+
             }
            
     }
