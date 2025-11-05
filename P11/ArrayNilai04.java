@@ -11,8 +11,12 @@ public class ArrayNilai04 {
             System.out.print("Masukkan nilai akhir ke-"+i+" : ");
             nilaiAKhi04[i] = ayu.nextInt();
         }
-        for (int i = 0; i < 10; i++) {
-            System.out.println("Nilai Akhir ke-"+i+" adalah "+nilaiAKhi04[i]);
-        }
+        for (int i = 0; i < nilaiAKhi04.length; i++) {
+            if (nilaiAKhi04[i] > 70) {
+                 System.out.println("Mahasiswa ke-"+i+" lulus");
+                }
+            }
+           
     }
+
 }
