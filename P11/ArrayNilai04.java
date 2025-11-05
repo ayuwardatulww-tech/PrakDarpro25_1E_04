@@ -7,7 +7,7 @@ public class ArrayNilai04 {
         Scanner ayu = new Scanner(System.in);
 
         int [] nilaiAKhi04 = new int [10];
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < nilaiAKhi04.length; i++) {
             System.out.print("Masukkan nilai akhir ke-"+i+" : ");
             nilaiAKhi04[i] = ayu.nextInt();
         }
