@@ -1,19 +1,32 @@
 package P11;
 
+import java.util.Scanner;
+
 public class SearchNilai04 {
     public static void main(String[] args) {
-        int [] arrNilai04 = {80,85,70,96,90,82,86};
-        int key04 = 90;
+        Scanner ayu = new Scanner(System.in);
         int hasil04 = 0;
 
-        for (int i = 0; i < arrNilai04.length; i++) {
+        System.out.print("Masukkan banyak nilai yang akan diinput : ");
+        int nilai04 = ayu.nextInt();
+
+        int [] arrNilai04 = new int [nilai04];
+
+        for (int i = 0; i < nilai04; i++) {
+            System.out.print("Masukkan nilai mahasiswa ke-"+(i+1)+" : ");
+            arrNilai04[i] = ayu.nextInt();
+        }
+        System.out.print("Masukkan nilai yang ingin dicari : ");
+        int key04 = ayu.nextInt();
+         for (int i = 0; i < arrNilai04.length; i++) {
             if (key04 == arrNilai04[i]) {
-                hasil04 = i;
+                hasil04 = (i+1);
                 break;
             }
-        }
-        System.out.println();
-        System.out.println("NIlai "+key04+" Ketemu di indeks ke-"+hasil04);
-        System.out.println();
+        }   
+        if (hasil04>0) {
+            System.out.println("Nilai "+key04+" ketemu, merupakan nilai mahasiswa ke-"+hasil04);
+        } 
+       
     }
 }
