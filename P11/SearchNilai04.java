@@ -26,7 +26,9 @@ public class SearchNilai04 {
         }   
         if (hasil04>0) {
             System.out.println("Nilai "+key04+" ketemu, merupakan nilai mahasiswa ke-"+hasil04);
-        } 
+        }else{
+            System.out.println("Nilai yang dicari tidak ditemukan");
+        }
        
     }
 }
