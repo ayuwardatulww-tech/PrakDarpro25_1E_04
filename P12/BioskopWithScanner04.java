@@ -33,7 +33,7 @@ public class BioskopWithScanner04 {
             ayu.nextLine();
 
             if (baris < 1 || baris > 4 ||  kolom < 1 || kolom > 2) {
-                System.out.println("WARNING !! Tempat sudah terpakai");
+                System.out.println("WARNING !! Tempat tidak tersedia");
                 continue;
             }
 
