@@ -18,8 +18,8 @@ public class Bioskop04 {
 
         System.out.println();
         System.out.println(penonton04.length);
-        for (int i = 0; i < penonton04.length; i++) {
-            System.out.println("Panjang baris ke-"+(i+1)+" : "+penonton04[i].length);
+        for (String [] barisPenonton04 : penonton04) {
+            System.out.println("Panjang baris: "+barisPenonton04.length);
         }
 }
 }
