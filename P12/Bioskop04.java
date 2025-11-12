@@ -9,6 +9,7 @@ public class Bioskop04 {
         penonton04[2][0] = "Eka";
         penonton04[2][1] = "Farhan";
         penonton04[3][0] = "Gisel";
+        penonton04[3][1] = "Hana";
 
         System.out.printf("%s \t %s \n", penonton04[0][0], penonton04[0][1]);
         System.out.printf("%s \t %s \n", penonton04[1][0], penonton04[1][1]);
