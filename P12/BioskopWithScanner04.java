@@ -32,6 +32,11 @@ public class BioskopWithScanner04 {
             kolom = ayu.nextInt();
             ayu.nextLine();
 
+            if (baris < 1 || baris > 4 ||  kolom < 1 || kolom > 2) {
+                System.out.println("WARNING !! Tempat sudah terpakai");
+                continue;
+            }
+
             penonton04[baris-1][kolom-1] = nama;
  
             System.out.print("Input penonton lainnya? (y/n): ");
