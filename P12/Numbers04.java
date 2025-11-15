@@ -12,5 +12,8 @@ public class Numbers04 {
         for (int i = 0; i < myNumbers04.length; i++) {
             System.out.println(Arrays.toString(myNumbers04[i]));
         }
+        for (int i = 0; i < myNumbers04.length; i++) {
+            System.out.println("Panjang baris ke-"+ (i+1)+ " : "+ myNumbers04[i].length);
+        }
     }
 }
