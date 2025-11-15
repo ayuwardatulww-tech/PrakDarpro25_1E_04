@@ -55,7 +55,11 @@ public class BioskopWithScanner04 {
             System.out.println("===== DAFTAR PENONTON =====");
             for (int i = 0; i < penonton04.length; i++) {
                 for (int j = 0; j < penonton04[i].length; j++) {
-                    System.out.print(penonton04[i][j]);
+                    if (penonton04[i][j] == null) {
+                        System.out.print("***");                      
+                    }else {
+                        System.out.print(penonton04[i][j]);
+                    }
                     if (j<penonton04[i].length-1) {
                         System.out.print("\t");
                     }
