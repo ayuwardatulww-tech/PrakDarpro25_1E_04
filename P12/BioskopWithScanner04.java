@@ -36,6 +36,11 @@ public class BioskopWithScanner04 {
                 System.out.println("WARNING !! Tempat tidak tersedia");
                 continue;
             }
+            ayu.nextLine();
+            if (penonton04[baris-1][kolom-1] != null ){
+                System.out.println("Tempat sudah terisi, silahkan pilih tempat lain!!");
+                continue;
+            }
 
             penonton04[baris-1][kolom-1] = nama;
  

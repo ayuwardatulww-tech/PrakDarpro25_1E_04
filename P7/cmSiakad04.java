@@ -145,14 +145,26 @@ public class cmSiakad04 {
         double totalBobot = nilaiBobot1+nilaiBobot2+nilaiBobot3;
         double ip = totalBobot/totalSKS;
      
-        // 
+        
         String statusSemester;
         if ((ip >= 2.00 && nilaiPancasila04 > 2 && nilaiDaspro > 0 && nilaiBing > 0)) {
             statusSemester = "lulus";
          }else {
             statusSemester = "tidak lulus (karena nilai pancasila > C)";
          }
-
+         //String statusSemesterbener;
+         //if ((ip >= 2.00 && nilaiSetara1 > 2 && nilaiSetara2 > 0 && nilaiSetara3 > 0)) {
+            //statusSemester = "lulus";
+         //}else {
+            //statusSemester = "tidak lulus (karena nilai pancasila > C)";
+         //}
+         String statusCumlaude;
+         if (ip>3.5 && statusSemester.equalsIgnoreCase("lulus")) {
+            statusCumlaude = "cumlaude";
+         }else {
+            statusCumlaude = "tidak cumlaude";
+         }
+         
          // tabel
          System.out.println("========== HASIL KONVERSI NILAI MAHASISWA==========");
          System.out.println("Nama: "+nama04);
@@ -168,6 +180,7 @@ public class cmSiakad04 {
          System.out.println("Total Bobot: "+totalBobot);
          System.out.println("Indeks Prestasi (IP): "+ ip);
          System.out.println("Status Semester: "+statusSemester);
+         System.out.println("Status Clumlaude: "+statusCumlaude);
 
           }else {
             System.out.println("[ERROR] Nilai tidak valid! Semua nilai harus berada di antara 0 - 100");
