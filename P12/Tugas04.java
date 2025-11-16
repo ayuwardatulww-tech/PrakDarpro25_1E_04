@@ -13,11 +13,8 @@ public class Tugas04 {
             angka[i] = ayu.nextInt();
             total += angka[i];
          }
-         System.out.println("array terbalik");
-         for (int i = 9; i >= 0; i--) {
-            System.out.println(angka[i]);
-         }
-
+         double rata = total/10.0;
+         System.out.println("Rata rata nilai = "+rata);
     }
 }
 
