@@ -25,7 +25,7 @@ public class SIAKAD04 {
             double totalPerMatkul04 = 0;
 
             for (int i = 0; i < 4; i++) {
-                //totalPerMatkul04 += nilai04[i][j];
+                totalPerMatkul04 += nilai04[i][j];
             }
             System.out.println("Mata kuliah "+(j+1)+": "+totalPerMatkul04/4);
         }
