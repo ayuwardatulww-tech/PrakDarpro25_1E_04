@@ -11,10 +11,25 @@ public class Tugas04 {
          for (int i = 0; i < angka.length; i++) {
             System.out.print("MAsukkan elemen ke-"+(i+1)+" : ");
             angka[i] = ayu.nextInt();
-            total += angka[i];
          }
-         double rata = total/10.0;
-         System.out.println("Rata rata nilai = "+rata);
+         System.out.print("Masukkan nilai yang dicari : ");
+        int n = ayu.nextInt();
+
+        boolean ditemukan = false;
+        
+        for (int i = 0; i < angka.length; i++) {
+            if (angka[i]==n) {
+                System.out.print("Nilai "+n+" ditemukan pada indeks: ");
+                System.out.println("Indeks ke-"+(i+1));
+                ditemukan = true;
+                break;
+            }
+        }
+        if (ditemukan) {
+            System.out.println("Nilai temukan dalam array");
+        }else{
+            System.out.println("Nilai tidak ditemukan");
+        }
     }
 }
 
