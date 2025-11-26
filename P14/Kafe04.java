@@ -1,5 +1,12 @@
+package P14;
 public class Kafe04 {
     public static void main(String[] args) {
+        Menu("Andi", true);
+    }
+        public static void Menu(String namaPelanggan04, boolean isMember04){
+            if (isMember04) {
+                System.out.println("Anda adalah member dapatkan diskon 10% untuk setiap pembelian!");
+            }
         
         System.out.println("===== MENU RESTO KAFE =====");
         System.out.println("1. KOpi Hitam - RP. 15.000");
