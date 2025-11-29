@@ -8,8 +8,8 @@ public class PengunjungCafe04 {
 
     static void daftarPengunjung04 (String...namaPengunjung04){
         System.out.println("Daftar Nama Pengunjung : ");
-        for (int i = 0; i < namaPengunjung04.length; i++) {
-            System.out.println("- "+namaPengunjung04[i]);
+        for (String nama04 : namaPengunjung04) {
+            System.out.println("- "+nama04);
         }
     }
 }
