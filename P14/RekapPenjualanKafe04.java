@@ -1,13 +1,20 @@
 package P14;
 import java.util.Scanner;
 public class RekapPenjualanKafe04 {
-    static String Menu04[] = {"Kopi", "Teh", "Es Kelapa", "Roti Bakar", "Gorengan"};
-    
+    static String Menu04[] = {"Kopi", "Teh", "Degan", "Roti", "Gorengan"};
+    static int jumlahHari04,jumlahMenu04;
     public static void main(String[] args) {
-        int[][] penjualan04 = new int[5][7];
+        Scanner ayu = new Scanner(System.in);
         
         System.out.println("=== REKAP PENJUALAN CAFE ===\n");
+
+        System.out.print("Masukkan jumlah hari penjualan : ");
+        jumlahHari04 = ayu.nextInt();
+        System.out.print("Masukkan jumlah menu yang dipilih : ");
+        jumlahMenu04 = ayu.nextInt();
     
+        int[][] penjualan04 = new int[jumlahMenu04][jumlahHari04];    
+
         InputData04(penjualan04);
         TampilkanData04(penjualan04);
         menuTerlaris04(penjualan04);
@@ -28,13 +35,17 @@ public class RekapPenjualanKafe04 {
     }
     public static void TampilkanData04(int[][] penjualan04) {
         System.out.println("=== DATA PENJUALAN ===");
-        System.out.println("Menu\t\tH1\tH2\tH3\tH4\tH5\tH6\tH7\tTotal");
-        
-        for (int i = 0; i < 5; i++) {
+        System.out.print("Menu\t\t");
+        for (int k = 0; k < jumlahHari04; k++) {
+            System.out.print("H"+(k+1)+"\t");
+        }
+        System.out.println("Total");
+
+        for (int i = 0; i < jumlahMenu04; i++) {
             int total04 = 0;
             System.out.print(Menu04[i] + "\t\t");
             
-            for (int j = 0; j < 7; j++) {
+            for (int j = 0; j < jumlahHari04; j++) {
                 System.out.print(penjualan04[i][j] + "\t");
                 total04 += penjualan04[i][j];
             }
@@ -47,9 +58,9 @@ public class RekapPenjualanKafe04 {
         int maxtot04 = 0;
         String menuTerlaris04 = "";
         
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < jumlahMenu04; i++) {
             int total04 = 0;
-            for (int j = 0; j < 7; j++) {
+            for (int j = 0; j < jumlahHari04; j++) {
                 total04 += penjualan04[i][j];
             }       
             if (total04 > maxtot04) {
@@ -62,12 +73,12 @@ public class RekapPenjualanKafe04 {
     public static void RataRata04(int[][] penjualan04) {
         System.out.println("=== RATA-RATA PER MENU ===");
         
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < jumlahMenu04; i++) {
             int total04 = 0;
-            for (int j = 0; j < 7; j++) {
+            for (int j = 0; j < jumlahHari04; j++) {
                 total04 += penjualan04[i][j];
             }
-            double Rata04 = total04 / 7.0;
+            double Rata04 = total04 / jumlahHari04;
             System.out.println(Menu04[i] + "\t\t: " + String.format("%.2f", Rata04) + " porsi/hari");
         }
     }
